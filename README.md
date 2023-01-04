@@ -2,41 +2,33 @@
 
 ## DomManipulation.
 
-<p>This project is very Challenging i learn lot of fundamental tools and skills from this project
-Youtube channel is big help to learn and how to imeplement knowledge in real project which i have been learning through this course. I am very greatfull to Dcode channel and traverse media had lot of great video  about DOM manipulation i took lot of ideas from there channel  and help from mdn web docs and w3school reading material were very helpful<p>
+<p>This project is very Challenging We learn lot of fundamental JavaScript  tools and skills from this project.This Project not possible without dedication of our team member (What a Team Work).add()And of course Elias Our Pod Instructure without his help and his guidance we cant be able to achieve what we achieve. Thanks Elias.
+ We took lot of ideas  and help from mdn web docs and w3school reading material were very helpful<p>
 
 ## File Structure
 
-- css <br>
-  styles.css
+
+ - styles.css
 - index.html
-- js<br>
-  app.js
+-app.js
 
 - README.md
 
+# Tools
+* Html
+* CSS
+* Bootstrap
+* Javascript
 
-* Navigation is built dynamically as an unordered list. Start with empty ul and dynamically build navigation createElement appendChild, and innerHTML.
-
+<hr>
+* Constructor
 
 ```javascript
-createNavMenu();
+Task();
 ```
-
-
-- Styling has been added for active sections and links .
-
+* Data Saved To
 ```javascript
-IntersectionObserver()
-```
-
-- Scroll to section on link click using scrollIntoView
-
-```javascript
-section.scrollIntoView({
-      behavior: "smooth",
-      block: 'start'    
-     });
+localStorage();
 ```
 
 * Font-awesome icon used to take totop by clicking
@@ -48,7 +40,7 @@ section.scrollIntoView({
      <html>
           
           
-   <p>Thankyou udacity for indepth tutorial and to the details lesson. It has been great learning experience. <p>       
+   <p>Thankyou All Team member and Elias for you throughout Support. <p>       
 
 
 
