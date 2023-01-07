@@ -1,54 +1,41 @@
-
-
 /* ---- Base Rules ---- */
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Rubik+80s+Fade&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Unica+One&display=swap");
 body {
-  background: rgb(119, 180, 150);
-  background: linear-gradient(
-    0deg,
-    rgb(114, 172, 144) 0%,
-    rgb(0, 6, 25) 100%
-  );
+ 
+  background:  rgb(233, 233, 233) ;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
-@media only screen and (min-width: 40em) {
+
   h1 {
     text-align: center;
-  font-family: "Rubik 80s Fade", cursive;
-  font-size: clamp(2rem, 6vw, 5rem);
-    border-bottom: 1px solid #cc1;
+    font-family: "Rubik 80s Fade", cursive;
+    font-size: clamp(2rem, 6vw, 5rem);
+    border-bottom: 1px solid rgb(255, 179, 3) ;
   }
-}
 
-h2  {
-  border-bottom: 1px solid #cc1;
+
+h2 {
   font-family: "Rubik 80s Fade", cursive;
   padding: 1rem;
   font-size: clamp(2rem, 6vw, 5rem);
-  color: #fff;
+  color: rgb(0, 0, 0);
+  text-align: end;
 }
 
 p {
-  text-align: center;
-  padding: 2rem;
-  line-height: 1.6em;
-  color: #eee;
-  font-size: clamp(0.8rem, 3vw, 1.5rem);
+  text-align: left;
+  color: rgb(0, 0, 0);
+  font-size: clamp(0.7rem, 3vw, 1.2rem);
 }
 
 /* ---- Layout Rules ---- */
 
-main {
-  margin: 10vh 1em 10vh;
-}
-.info{
-  margin-top: 10rem;
-}
+
 section {
   position: relative;
   min-width: 100%;
@@ -56,20 +43,50 @@ section {
   padding: 3em;
 }
 /* ---- home page ---- */
-.main-hero {
-  margin-top: 5em;
-}
-.left{
+
+.left {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.right{
+.skew{
+  position: absolute;
+  top: 132px;
+  left: 0;
+  width: 103%;
+  height: 60vh;
+  background: rgb(182, 182, 182);
+  background: linear-gradient(
+    0deg,
+    rgba(201, 201, 201,) 
+    rgba(123, 123, 123,)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  overflow: hidden;
+  
+}
+.SkewedOne{
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 254, 243) ;
+  transform: skewY(-35deg);
+  transform-origin: top left;
+}
+.SkewedTwo{
+  position: absolute;
+  bottom: -100%;
+  right: 50%;
+  width: 100%;
+  height: 100%;
+  background:  rgb(255, 254, 243) ;
+  transform: skewY(35deg);
+  transform-origin: top right;
 }
 .left h4 {
   font-size: clamp(1rem, 4vw, 2rem);
@@ -80,314 +97,352 @@ section {
 
 /* ---- About ---- */
 
-
 .image {
-  
   position: relative;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
   box-sizing: border-box;
-  width: clamp(400px, 350px, 200px);
-  height: clamp(400px, 350px, 200px);
- 
+  width: clamp(300px, 3vh, 200px);
+  height: clamp(300px, 3vh, 250px);
 }
-
-.button {
-  color: antiquewhite;
-  border: none;
+.btn a{
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  padding: 0.5em 1.5em;
-  border-radius: 0.5em;
-  background-color: rgb(80, 75, 70);
   transition: 1s;
-  font-size: 1.2em;
-  margin-top: 2rem;
-  
-}
-.text a:hover {
-  letter-spacing: 2px;
 }
 
 /* ---- skills ---- */
 
-
-.icons img{
-  margin-left: 1rem;
+.icons img {
   padding: 1rem;
   width: 60px;
   height: 60px;
 }
 
-
-.my-text span{
+.my-text span {
   font-family: "Rubik 80s Fade", cursive;
-  font-size: clamp(4rem, 9vw, 8rem); 
+  font-size: clamp(1rem, 9vw, 2rem);
 }
 
-.book{
+.book {
   width: 100%;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  
 }
 
-input{
-display: none;
+input {
+  display: none;
 }
 
-img{
-    width: 100%;
-    height: 100%;
+img {
+  width: 100%;
+  height: 100%;
 }
 
-#cover{
-    width: 380px;
-    height: 480px;
+#cover {
+  width: 380px;
+  height: 480px;
 }
 
-.flip-book{
-    width: 380px;
-    height: 480px;
-    position: relative;
-    perspective: 1500px;
-}
-
-.flip{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left:0;
-    transform-origin: left;
-    transform-style: preserve-3d;
-    transform: rotateY(0deg);
-    transition: 0.8s;
-
-}
-
-
-.front{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left:0;
-    background-color: rgb(60, 60, 60);
-    box-sizing: border-box;
-    box-shadow:inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,.5);
-    font-size: 14px;
-   
-}
-.front h2{
- letter-spacing: 2px;
- padding-top: 1rem;
-}
-.front p,ul,h4{
-    padding: 1rem;
-    font-size: 0.85rem;
-}
-
-.back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-    background-color: #000;
-
-}
-
-.next-btn{
-    position: absolute;
-    bottom: 13px;
-    right: 13px;
-    cursor: pointer;
-    color: rgb(255, 115, 0);
-}
-.back-btn{
-   position: absolute;
-   bottom: 13px;
-   right: 13px;
-   cursor: pointer;
-   color:  rgb(255, 115, 0);
-}
-
-#p1{
-    z-index: 10;
-}
-#p2{
-    z-index: 9;
-}
-#p3{
-    z-index: 8;
-}
-#p4{
-    z-index: 7;
-}
-#p5{
-    z-index: 6;
-}
-#p6{
-    z-index: 5;
-}
-#p7{
-    z-index: 4;
-}
-#p8{
-    z-index: 3;
-}
-#p9{
-    z-index: 2;
-}
-#p9{
-    z-index: 1;
-}
-
-#c1:checked ~ .flip-book #p1{
-    transform: rotateY(-180deg);
-    z-index: 1;
-}
-#c2:checked ~ .flip-book #p2{
-    transform: rotateY(-180deg);
-    z-index: 2;
-}
-#c3:checked ~ .flip-book #p3{
-    transform: rotateY(-180deg);
-    z-index: 3;
-}
-#c4:checked ~ .flip-book #p4{
-    transform: rotateY(-180deg);
-    z-index: 4;
-}
-#c5:checked ~ .flip-book #p5{
-    transform: rotateY(-180deg);
-    z-index: 5;
-}
-#c6:checked ~ .flip-book #p6{
-    transform: rotateY(-180deg);
-    z-index:6;
-}
-#c7:checked ~ .flip-book #p7{
-    transform: rotateY(-180deg);
-    z-index:7;
-}
-#c8:checked ~ .flip-book #p8{
-    transform: rotateY(-180deg);
-    z-index :8;
-}
-#c9:checked ~ .flip-book #p9{
-    transform: rotateY(-180deg);
-    z-index:9;
-}
-#c10:checked ~ .flip-book #p10{
-    transform: rotateY(-180deg);
-    z-index:10;
-}
-
-/*---project*/
-
-:root {
-  --level-one: translateZ(3rem);
-  --level-two: translateZ(6rem);
-  --level-three: translateZ(9rem);
-  
-  --fw-normal: 400;
-  --fw-bold: 700;
-  
-  --clr: #b7c9e5;
-}
-/*project */
-
-.card {
-  width: 350px;
-  height: 250px;
-  
-}
-.work{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 3rem;
-  text-align: center;
-}
-
-.card__content {
-  text-align: center;
+.flip-book {
+  width: 380px;
+  height: 480px;
   position: relative;
-  padding: 5em 2em;
-  transition: transform 3s;
-  transform-style: preserve-3d;
+  perspective: 1500px;
 }
 
-.card:hover .card__content {
-  transform: rotateY(.5turn);
-}
-
-.card__front,
-.card__back {
-  height: 250px;
+.flip {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  padding: 2em 1em;
-  backface-visibility: hidden;
+  transform-origin: left;
   transform-style: preserve-3d;
-  display: grid;
-  align-content: center;
+  transform: rotateY(0deg);
+  transition: 0.8s;
 }
 
-.card__front {
-  background-color: var(--clr);
-  background-size: cover; 
-  background-blend-mode: overlay;
-  color: #333;
-}
-
-.card__front::before {
-  content: '';
+.front {
   position: absolute;
-  --spacer: 1em;
-  top: var(--spacer);
-  bottom: var(--spacer);
-  left: var(--spacer);
-  right: var(--spacer);
-  border: 3px solid currentColor;
-  transform: var(--level-one);
-}
-
-.card__title {
-  font-size: 3.5rem;
-  transform: var(--level-three);
-  order: 2;
-  text-transform: uppercase;
-}
-
-
-
-.card__body {
-  transform: var(--level-two);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(230, 230, 230);
+  box-sizing: border-box;
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5) 0 2px 5px rgba(0, 0, 0, 0.5);
+  
   
 }
-.card__back {
-  transform: rotateY(.5turn);
-  color: var(--clr);
-  background: rgb(38, 38, 38);
+
+.front
+p,
+h3,
+h4
+
+{
+  text-align: left;
+  padding: 0.5rem;
+  list-style: none;
+  font-size: clamp(0.7rem, 1vw, 1rem);
+}
+.front ul li{
+  font-size: clamp(0.5rem, 1vw, 1rem);
+  text-align: left;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background-color: rgb(75, 75, 75);
+}
+
+.next-btn {
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  cursor: pointer;
+  color: rgb(255, 115, 0);
+}
+.back-btn {
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+  cursor: pointer;
+  color: rgb(255, 111, 0);
+}
+
+#p1 {
+  z-index: 10;
+}
+#p2 {
+  z-index: 9;
+}
+#p3 {
+  z-index: 8;
+}
+#p4 {
+  z-index: 7;
+}
+#p5 {
+  z-index: 6;
+}
+#p6 {
+  z-index: 5;
+}
+#p7 {
+  z-index: 4;
+}
+#p8 {
+  z-index: 3;
+}
+#p9 {
+  z-index: 2;
+}
+#p9 {
+  z-index: 1;
+}
+
+#c1:checked ~ .flip-book #p1 {
+  transform: rotateY(-180deg);
+  z-index: 1;
+}
+#c2:checked ~ .flip-book #p2 {
+  transform: rotateY(-180deg);
+  z-index: 2;
+}
+#c3:checked ~ .flip-book #p3 {
+  transform: rotateY(-180deg);
+  z-index: 3;
+}
+#c4:checked ~ .flip-book #p4 {
+  transform: rotateY(-180deg);
+  z-index: 4;
+}
+#c5:checked ~ .flip-book #p5 {
+  transform: rotateY(-180deg);
+  z-index: 5;
+}
+#c6:checked ~ .flip-book #p6 {
+  transform: rotateY(-180deg);
+  z-index: 6;
+}
+#c7:checked ~ .flip-book #p7 {
+  transform: rotateY(-180deg);
+  z-index: 7;
+}
+#c8:checked ~ .flip-book #p8 {
+  transform: rotateY(-180deg);
+  z-index: 8;
+}
+#c9:checked ~ .flip-book #p9 {
+  transform: rotateY(-180deg);
+  z-index: 9;
+}
+#c10:checked ~ .flip-book #p10 {
+  transform: rotateY(-180deg);
+  z-index: 10;
 }
 
 
 
+
+
+
+
+
+/* ---- education ---- */
+.blob {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(
+    180deg,
+    rgba(233, 233, 233, 0.59) 31.77%,
+    #979ba1 100%
+  );
+  border-radius: 64% 36% 35% 45% / 97% 96% 94% 98%;
+}
+.h3{
+  width: 300px;
+ min-height: 30px;
+  background: rgba( 255, 255, 255, 0.15 );
+  opacity: 0.7;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 18px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 1rem;
+  padding: 2rem;
+  z-index: 10;
+  color: rgb(99, 98, 98);
+}
+.exp{
+  height: 450px;
+  border-radius:5px;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*project */
 /* ---- Module Rules ---- */
+
+.card-position{
+  position: relative;
+  top: -20%;
+  left: 27%;
+}
+  .work {
+   position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .story{
+   padding-left: 1rem;
+   padding-right: 1rem;
+    width: 80%;
+    height: 400px;
+    background: rgb(255, 255, 248);
+  }
+  .built{
+    background-color: #b9b9b9;
+    width: 25%;
+  }
+  .git{
+    background-color: #9d9d9d;
+    width: 25%;
+    text-align: center;
+    padding: 6px 0 6px 0;
+    border-radius: 10px;
+  }
+  .git a{
+    text-decoration: none;
+    color: white;
+   
+  }
+  .card {
+    width: 400px;
+    height: 380px;
+    box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+    background-color: rgb(219, 219, 219);
+  }
+  
+  
+  .card__content {
+    text-align: center;
+    position: relative;
+    padding: 5em 2em;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .card__content {
+    transform: rotateY(0.5turn);
+  }
+  
+  .card__front,
+  .card__back {
+    height: 380px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2em 1em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: grid;
+    align-content: center;
+  }
+  
+  .card__front {
+    background-color: #d8d8d8;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: rgb(142, 142, 142);
+  }
+  
+  .card__front::before {
+    content: "";
+    position: absolute;
+    --spacer: 1em;
+    top: var(--spacer);
+    bottom: var(--spacer);
+    left: var(--spacer);
+    right: var(--spacer);
+    border: 3px solid currentColor;
+    transform:translateZ(3rem);
+  }
+  
+  .card__title {
+    font-size: 3.5rem;
+    transform: translateZ(9rem);
+    order: 2;
+    text-transform: uppercase;
+  }
+  
+  .card__body {
+    transform: translateZ(6rem);
+  }
+  .card__back {
+    transform: rotateY(0.5turn);
+    background: rgb(219, 219, 219);
+  }
+  
 
 /* Navigation Styles*/
 /***********************************  a button to make more sections  *****************************/
@@ -401,51 +456,61 @@ img{
   border: 0px;
   font-size: 18.5px;
   font-weight: bold;
-  background-color: #1ca4b6;
+  background-color: #535353;
   color: white;
   cursor: pointer;
 }
 .navbar__menu #btn:hover {
-  background-color: #26dff7;
+  background-color:  #535353;
   color: rgb(255, 255, 255);
 }
 .navbar__menu ul {
-  padding-left: 0;
-  margin: 0;
+  padding-left: 1rem;
+  margin: 1rem;
   text-align: right;
 }
 
 .navbar__menu li {
   display: inline-block;
+  padding-left: 1rem;
+  margin: 1rem;
 }
 .navbar__menu .menu__link {
   display: block;
   padding: 1em;
-  font-weight: bold;
   text-decoration: none;
   color: #000;
 }
 
 .navbar__menu .menu__link:hover {
-  background: #26dff7;
+  background: #141515;
+  border-radius: 50%;
+  padding: 1rem;
   color: #fff;
   transition: ease 0.3s all;
 }
 
 /********************************** make a different style for active links ***********************/
 .navbar__menu .active-link {
-  background: #26dff7;
-  color: rgb(255, 255, 255);
+  background: #e3e3e3;
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
   transition: ease 0.3s all;
 }
 
 /* Header Styles */
 .page__header {
-  background: rgb(255, 255, 255);
+  background: rgb(182, 182, 182);
+  background: linear-gradient(
+    0deg,
+    rgba(201, 201, 201,) 
+    rgba(123, 123, 123,)
+  );
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 5;
+  height: 150px;
+  z-index: 15;
   opacity: 1;
   transition: all 0.5s ease-out;
 }
@@ -463,19 +528,16 @@ img{
 
 /* ---- Theme Rules ---- */
 /* Landing Container Styles */
-#section3{
+#section3 {
   height: auto;
-  
 }
-#section4{
+#section4 {
   margin-top: 3rem;
 }
 .container {
   padding: 1em;
   width: 100%;
 }
-
-
 
 section:nth-of-type(even) .container {
   margin-right: 0;
@@ -517,7 +579,7 @@ section:nth-of-type(even) .container::before {
   transition: ease 0.5s all;
 }
 
-section:nth-of-type(3n ) .container::after {
+section:nth-of-type(3n) .container::after {
   content: "";
   background: rgb(174, 162, 162);
   background: linear-gradient(
@@ -539,11 +601,7 @@ section:nth-of-type(3n ) .container::after {
 section:nth-of-type(3n + 1) .container::after {
   content: "";
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    0deg,
-    rgb(184, 103, 103) 0%,
-    rgb(30, 5, 5) 100%
-  );
+  background: linear-gradient(0deg, rgb(184, 103, 103) 0%, rgb(30, 5, 5) 100%);
   position: absolute;
   right: 5vw;
   bottom: 5em;
@@ -559,14 +617,13 @@ section:nth-of-type(3n + 1) .container::after {
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
 section.your-active-class {
-  background: rgb(44, 60, 68);
+  background: rgb(215, 215, 215);
   background: linear-gradient(
     0deg,
-    rgba(45, 53, 56, 0.774) 0%,
-    rgba(3, 25, 31, 0.782) 100%
+    rgba(225, 225, 225, 0.774) 0%,
+    rgba(172, 172, 172, 0.782) 100%
   );
-  border-radius: 20px;
- 
+  border-radius: 10px;
 }
 
 section.your-active-class .container::before {
@@ -589,14 +646,44 @@ section.your-active-class .container::after {
   }
 }
 /****************************** making some changes on the button on small screens **************************/
-@media only screen and (max-width: 39.5em) {
+@media only screen and (max-width: 52.5em) {
   .navbar__menu #btn {
     top: 100%;
     font-size: 17px;
     width: 7.5em;
     height: 1.8em;
   }
+  .card{
+    height: 320px;
+    width: 280px;
+  }
+  .card__front,
+.card__back {
+  height: 320px;
+ 
 }
+  .card-position{
+    position: relative;
+    top: -25%;
+    left: 0;
+   height: 300px;
+   
+  }
+  .story{
+    height: 550px;
+    padding: 0.5rem;
+    
+  }
+  .story p{
+    font-size: 0.8rem;
+  }
+  .work{
+    margin-top: 2rem;
+    
+
+  }
+}
+
 #TopPage {
   background-color: #031d28;
   width: 3rem;
@@ -616,3 +703,4 @@ section.your-active-class .container::after {
 #TopPage.active {
   opacity: 1;
 }
+

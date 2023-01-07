@@ -25,35 +25,34 @@
     </nav>
   </header>
 
-    <div class="container-fluid h-100 info">
+    <div class="container-fluid h-75 ">
       <div class="row ">
-        <div class="col-md-6 xs-6 left">
+        <div class="col-md-12 left skew ">
           <h1>Shahan Ahmad</h1>
           <h3>Junior Web Developer</h3>
           <a href="#">shahan.ahmad@hotmail.com</a>
           <h4>Melbourne</h4>
-        </div>
-        <div class="col-md-6 xs-6 right">
-         <p>Lorem ipsum dolor sit, amet consectetur  quaerat incidunt harum qui? Porro.</p>
-        </div>
+          <span class="SkewedOne"></span>
+      <span class="SkewedTwo"></span>
+         </div>
       </div>
-   
+      
   </div>
   <main>
    <!--About-->
-    <section id="section1" data-nav="Home" class="your-active-class">
-     <div class="container py-2 h-auto ">
+    <section id="section1" data-nav="Home" class="your-active-class h-50">
       <h2>1,</h2>
+      <div class="container py-2 h-auto ">
       <div class="row">
         <div class="col-md-6 xs-6  p-4">
           <div class="image">
             <img src="./assets/photo.jpg" alt="my pic">
           </div>
         </div>
-        <div class="col-md-6 xs-6 ">
+        <div class="col-md-6 xs-6 d-flex flex-column justify-content-center">
             <h1>About Me</h1>
             <p>I am enthusiastic and Growth mindset Graduate Front End Developer with strong work ethics, motivated to learn & grow. The main area of my expertise is front-end development, HTML, CSS, JS and React Framework building small and medium web apps, custom plugins, features, animations, and coding interactive layouts.</p>
-            <a href="./assets/resume.pdf" rel="noopener noreferrer" target="_blank" class="button">Resume</a>
+            <button type="button" class="btn  btn-secondary  "><a href="./assets/resume.pdf" rel="noopener noreferrer" target="_blank" class="button">Resume</a></button>
         </div>
       </div>
      </div>
@@ -61,13 +60,13 @@
 
     <!--skills-->
     <section id="section2" data-nav="About" >
+      <h2>2,</h2>
       <div class="container p-5 h-auto">
-        <h2>2,</h2>
-      <div class="row">
-        <div class="col-md-6 xs-6 p-3">
+        <div class="row">
+        <div class="col-md-5 xs-5 d-flex flex-column justify-content-center">
           <div class="skill-text">
             <div class="my-text">
-              <h2><span>M</span>y <span>S</span>kills</h2>
+              <h1><span>M</span>y <span>S</span>kills</h1>
                 <p>
                 I learn the skills that are necessary to be a Junior Front End Developer from Univeristy,
                 Bootcamp and lots of online tuturiol and motivated to learn more, I thrive on my Behaviour skills
@@ -86,7 +85,7 @@
               </div>
           </div>
         </div>
-        <div class="col-md-6 xs-6  p-3">
+        <div class="col-md-7 xs-7 d-flex flex-column justify-content-center ">
           <div class="book">
             <input type="checkbox" id="c1" />
             <input type="checkbox" id="c2" />
@@ -105,12 +104,12 @@
               <div class="flip" id="p1" >
                 <div class="front" >
                   <h3>Skills</h3>
-                  <h4>lorem5</h4>
+                  <p>My teacher said to me once, “As long as you are willing to learn, I will make you into something.Look forward to challenges, even when they’re intimidating Work towards your goal, no matter how many times it takes Persist through mistakes and failures, despite how hard it may be”"</p>
                   <ul>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
+                    <li>Detail Oriented</li>
+                    <li>Time Management.</li>
+                    <li>Communication.</li>
+                    <li>Organization.</li>
                   </ul>
                   <label for="c1" class="next-btn">
                     Next
@@ -126,12 +125,14 @@
                 <div class="flip" id="p2" >
                   <div class="front" >
                     <h3>HTML</h3>
-                    <h4>lorem5</h4>
+                    <p>Practices I follow to Write Clean HTML Code</p>
                     <ul>
-                      <li>Lorem, ipsum.</li>
-                      <li>Lorem, ipsum.</li>
-                      <li>Lorem, ipsum.</li>
-                      <li>Lorem, ipsum.</li>
+                      <li>Use a Meaningful Title.  </li>
+                      <li>Descriptive Meta Tags.</li>
+                      <li>Write Tags in Lowercase.</li>
+                      <li>Add Image Attributes.</li>
+                      <li>Avoid Using Inline Styles.</li>
+                      <li>Proper Use of Indentation</li>
                     </ul>
                     <label for="c2" class="next-btn">
                       Next
@@ -148,12 +149,14 @@
                   <div class="flip" id="p3" >
                     <div class="front" >
                       <h3>CSS</h3>
-                      <h4>lorem5</h4>
+                      <p>I am in love with Css. I watched 100 of tutorials to improve my skill and felt like  never enough.</p>
                       <ul>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
-                        <li>Lorem, ipsum.</li>
+                        <li>Make  CSS Structure Readable.</li>
+                        <li>Keep CSS Structure Consistent.</li>
+                        <li>Understanding of Block and Inline Elements.</li>
+                        <li>Flex-Box</li>
+                        <li>CSS Grid</li>
+                        <li>Responsive Layout</li>
                       </ul>
                       <label for="c3" class="next-btn">
                         Next
@@ -169,12 +172,15 @@
                     <div class="flip" id="p4" >
                       <div class="front" >
                         <h3>JavaScript</h3>
-                        <h4>lorem5</h4>
+                        <p>When I started JavaScript it is a tough language to learn, but it becomes my habit once I get into it, and  find it more interesting.</p>
                         <ul>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
-                          <li>Lorem, ipsum.</li>
+                          <li>Data Structure.</li>
+                          <li>Closure.</li>
+                          <li>Functional Programing.</li>
+                          <li>Object Oriented Programing.</li>
+                          <li>Asynchronous Programming</li>
+                          <li>Writing Cross-Browser Code</li>
+                          <li>Keep Up With The Industry</li>
                         </ul>
                         <label for="c4" class="next-btn">
                           Next
@@ -189,13 +195,14 @@
                       </div>
                       <div class="flip" id="p5" >
                         <div class="front" >
-                          <h3>react</h3>
-                          <h4>lorem5</h4>
+                          <h3>React.js</h3>
+                          <p>I was very hesitant to learn React to start with because i want to be confident with the core fundamentals of HTML, CSS, and JavaScript .Once I started React i fall straight into it and React open big door how to approch front end development</p>
                           <ul>
-                            <li>Lorem, ipsum.</li>
-                            <li>Lorem, ipsum.</li>
-                            <li>Lorem, ipsum.</li>
-                            <li>Lorem, ipsum.</li>
+                            <li>JSX.</li>
+                            <li>Component lifecycle.</li>
+                            <li>Higher-order components.</li>
+                            <li>React state and setState</li>
+                            <li>React Context.</li>
                           </ul>
                           <label for="c5" class="next-btn">
                             Next
@@ -211,12 +218,12 @@
                         <div class="flip" id="p6" >
                           <div class="front" >
                             <h3>Bootstrap</h3>
-                            <h4>lorem5</h4>
+                            <p>Bootstrap has given me an extra tools to make my application responsive.I am a big fan of Bootstrap grid</p>
                             <ul>
-                              <li>Lorem, ipsum.</li>
-                              <li>Lorem, ipsum.</li>
-                              <li>Lorem, ipsum.</li>
-                              <li>Lorem, ipsum.</li>
+                              <li>Bootstrap Documentation.</li>
+                              <li>Follow latest updates.</li>
+                              <li>Styled With Bootstrap.</li>
+                              <li>Keep learning Bootstrap.</li>
                             </ul>
                             <label for="c6" class="next-btn">
                               Next
@@ -232,12 +239,11 @@
                           <div class="flip" id="p7" >
                             <div class="front" >
                               <h3>Node</h3>
-                              <h4>lorem5</h4>
+                              <p>To learn Node.js I educate myself with online sources. To feel proficient in Node,I am keen to learn lot about Node.js. I got basic knowledge of Node.ja to run application and for testing purpose.</p>
                               <ul>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
-                                <li>Lorem, ipsum.</li>
+                                <li>Knowledge of Node.js framework.</li>
+                                <li>Basic Knowledge of  tools and test runners.</li>
+                                
                               </ul>
                               <label for="c7" class="next-btn">
                                 Next
@@ -253,12 +259,12 @@
                             <div class="flip" id="p8" >
                               <div class="front" >
                                 <h3>Express.js</h3>
-                                <h4>lorem5</h4>
+                                <p>I Learn Express.js at RMIT University when I was doing Front End Certification 2022.</p>
                                 <ul>
-                                  <li>Lorem, ipsum.</li>
-                                  <li>Lorem, ipsum.</li>
-                                  <li>Lorem, ipsum.</li>
-                                  <li>Lorem, ipsum.</li>
+                                  <li>Configuring Express.js servers.</li>
+                                  <li>Handling incoming requests.</li>
+                                  <li>Serving data to the client.</li>
+                                  <li>Routing requests.</li>
                                 </ul>
                                 <label for="c8" class="next-btn">
                                   Next
@@ -274,12 +280,11 @@
                               <div class="flip" id="p9" >
                                 <div class="front" >
                                   <h3>Webpack</h3>
-                                  <h4>lorem5</h4>
+                                  <p>I can bundle and minify code, transpile code, using WebPack.I got  Knowledge of Webpack  to extend the functionality of Webpack and make it easier to customize the bundling process.</p>
                                   <ul>
-                                    <li>Lorem, ipsum.</li>
-                                    <li>Lorem, ipsum.</li>
-                                    <li>Lorem, ipsum.</li>
-                                    <li>Lorem, ipsum.</li>
+                                    <li>Keep the webpack configuration DRY</li>
+                                    <li>Leverage caching to speed up builds.</li>
+                                    <li>Split application code into separate bundles.</li>
                                   </ul>
                                   <label for="c9" class="next-btn">
                                     Next
@@ -299,169 +304,166 @@
       </div>
     </section>
 
-    <!--project-->
-    <section id="section3" data-nav="Contact" >
-      <div class="container">
-        <h1>3,</h1>
-        <h1>I Built Something</h1>
-        <div class="row">
-          <div class="col-md-4 work">
-            <div class="card">
-              <div class="card__content">
-                <div class="card__front">
-                  <img src="./assets/pro1.png" alt="">
-                </div> 
-                
-                <div class="card__back">
-                  <img src="./assets/Dom.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="tools"><h5>HTML-CSS</h5></div>
-            <div class="story"> <h6>In Jairajpuri Blog  I learn how to make a webpage with marked up text and images.Learn how to use other editors to develop  web pages and how to use the browser developer tools to debug  webpages.</h6></div>
-          </div>
-          <div class="col-md-4 work">
-            <div class="card">
-              <div class="card__content">
-                <div class="card__front">
-                  <img src="./assets/pro1.png" alt="">
-                </div> 
-                
-                <div class="card__back">
-                  <img src="./assets/Dom.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="tools"><h5>HTML-CSS</h5></div>
-            <div class="story"> <h6>In Jairajpuri Blog  I learn how to make a webpage with marked up text and images.Learn how to use other editors to develop  web pages and how to use the browser developer tools to debug  webpages.</h6></div>
-          </div>
-          <div class="col-md-4 work">
-            <div class="card">
-              <div class="card__content">
-                <div class="card__front">
-                  <img src="./assets/pro1.png" alt="">
-                </div> 
-                
-                <div class="card__back">
-                  <img src="./assets/Dom.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="tools"><h5>HTML-CSS</h5></div>
-            <div class="story"> <h6>In Jairajpuri Blog  I learn how to make a webpage with marked up text and images.Learn how to use other editors to develop  web pages and how to use the browser developer tools to debug  webpages.</h6></div>
-          </div>
-          <div class="col-md-4 work">
-            <div class="card">
-              <div class="card__content">
-                <div class="card__front">
-                  <img src="./assets/pro1.png" alt="">
-                </div> 
-                
-                <div class="card__back">
-                  <img src="./assets/Dom.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="tools"><h5>HTML-CSS</h5></div>
-            <div class="story"> <h6>In Jairajpuri Blog  I learn how to make a webpage with marked up text and images.Learn how to use other editors to develop  web pages and how to use the browser developer tools to debug  webpages.</h6></div>
-          </div>
-        </div>
-      </div>
-      
-      <!--
-      <div class="container h-auto project">
-        <h1>3,</h1>
-        <h1>I Built Something</h1>
-        <div class="row py-5">
-          <div class="col-md-6 work" >
-            <div class="card">
-              <div class="card__content">
-                <div class="card__front">
-                  <img src="./assets/pro1.png" alt="">
-                </div> 
-                
-                <div class="card__back">
-                  <img src="./assets/Dom.jpg" alt="">
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 desc">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatem, dolor a earum est iure aliquam totam quos praesentium eum doloribus tempore cum vero eveniet. Libero enim eius nam quod.</p>
-          </div>
-        </div>
- 
-       <div class="row py-5">
-        <div class="col-md-6 work" >
-          <div class="card">
-            <div class="card__content">
-              <div class="card__front">
-                <img src="./assets/pro1.png" alt="">
-              </div> 
-              
-              <div class="card__back">
-                <img src="./assets/Dom.jpg" alt="">
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 desc">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatem, dolor a earum est iure aliquam totam quos praesentium eum doloribus tempore cum vero eveniet. Libero enim eius nam quod.</p>
-        </div>
-      </div>
-
-     <div class="row py-5">
-      <div class="col-md-6 work" >
-        <div class="card">
-          <div class="card__content">
-            <div class="card__front">
-              <img src="./assets/pro1.png" alt="">
-            </div> 
-            
-            <div class="card__back">
-              <img src="./assets/Dom.jpg" alt="">
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 desc">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatem, dolor a earum est iure aliquam totam quos praesentium eum doloribus tempore cum vero eveniet. Libero enim eius nam quod.</p>
-      </div>
-    </div>
- 
-   <div class="row py-5">
-    <div class="col-md-6 work" >
-      <div class="card">
-        <div class="card__content">
-          <div class="card__front">
-            <img src="./assets/pro1.png" alt="">
-          </div> 
-          
-          <div class="card__back">
-            <img src="./assets/Dom.jpg" alt="">
-          </div>
-          
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6 desc">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, voluptatem, dolor a earum est iure aliquam totam quos praesentium eum doloribus tempore cum vero eveniet. Libero enim eius nam quod.</p>
-    </div>
-  </div>
- -->
-  </div>
-</section>
+   
+    
     <!--study-->
     <section id="section4" data-nav="Media">
-      <div class="container">
-        <h2>Section 4</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+      <h1> 4, Education</h1>
+      <div class="container h-auto education ">
+        <div class="row py-5 ">
+          <div class="col-md-6  d-flex flex-column justify-content-center ">
+            <div class="blob d-flex flex-column justify-content-center align-items-center">
+              <p class="h3 text-uppercase">Education</p>
+              <article class="py-1">
+               <p class="h6">Victoria University</p>
+               <p>Graduate Diploma Business Computing</p>
+              </article>
+              <article class="py-1 ">
+               <p class="h6">RMIT</p>
+               <p>Front End Developer - 2022 </p>
+              </article>
+              <article class="py-1">
+               <p class="h6">Generation Australia</p>
+               <p>Front End Developer Program - 2022</p>
+              </article>
+             </div> 
+          </div>
+          <div class="col-md-6 py-5   d-flex flex-column justify-content-center ">
+            <div class="blob d-flex flex-column justify-content-center align-items-center">
+              <p class="h3 text-uppercase">Certificate</p>
+              <ul class="py-5 ">
+                <li>Certificate in Front-End Developer Udacity</li>
+                <li>HTML  Codecademy</li>
+                <li>CSS3  Codecademy</li>
+                <li>Javascript  Codecademy</li>
+                <li>React.js Codecademy</li>
+                <li>BootStrap Codecademy</li>
+                <li>SQL</li>
+              </ul>
+             </div> 
+          </div>
+     </div>
+        
+        <div class="row py-5">
+    
+          <div class="col-md-12   d-flex flex-column justify-content-center ">
+            <div class="blob exp d-flex flex-column justify-content-center ">
+              <p class="h3 text-uppercase">experience</p>
+              <p class="h4">Generation Australia</p>
+            <p class="h5">Date:2022</p>
+            <p class="h6">Junior Web Developer Program</p>
+            <p class="fs-6">I was accepted into Generation Australia’s 16 week, Junior web development program Program.  I learn  web development technical skills along with growth mindset and persistence skills.Efficiently contributed to highly collaborative work environment, finding solutions with determination.Used various technologies, including JavaScript to determine coding requirements for project creation, including ecommerce capability and security and specialized scripts.</p>
+             </div> 
+          </div>
+         
+        </div>
       </div>
     </section>
+
+    
+       <!--project--> 
+       <section id="section3" data-nav="Contact" >
+        <h1>3,I Built Something....</h1>
+        <div class="container-fluid h-auto">
+          <div class="row  " >
+           <div class="col-md-12 work">
+            <div class="py-3 story">
+              <p class="px-3 py-3">Task Manager Project was a team Project at Generation Australia Junior web development Program using bootstrap and Javascript.There was lot of Challenges in this project but we accomplished all rubric requirement as team.We work as a unit with clear communication .This was great team work experience for me and thoroughly enjoyed  team work.</p>
+                    <p class="h6 text-muted px-3 built">/* Build with*/ `${HTML-CSS}`</p>
+                    <p class="px-3 git"><a href="">Live Demo</a></p>
+                    <p class="px-3 git"><a href="">Github Repo</a></p>
+            </div>
+            <div class="card-position">
+              <div class="card">
+                <div class="card__content">
+                  <div class="card__front">
+                    <img src="./assets/pro1.png" alt="">
+                  </div> 
+                  
+                  <div class="card__back">
+                    <img src="./assets/Dom.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            </div>
+              
+            <div class="col-md-12 work">
+              <div class="  story">
+                <p class="px-3 py-3">Task Manager Project was a team Project at Generation Australia Junior web development Program using bootstrap and Javascript.There was lot of Challenges in this project but we accomplished all rubric requirement as team.We work as a unit with clear communication .This was great team work experience for me and thoroughly enjoyed  team work.</p>
+                <p class="h6 text-muted px-3 built">/* Build with*/ `${HTML-CSS}`</p>
+                <p class="px-3 git"><a href="">Live Demo</a></p>
+                <p class="px-3 git"><a href="">Github Repo</a></p>
+              </div>
+              <div class="card-position">
+                <div class="card">
+                  <div class="card__content">
+                    <div class="card__front">
+                      <img src="./assets/pro1.png" alt="">
+                    </div> 
+                    
+                    <div class="card__back">
+                      <img src="./assets/Dom.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+              </div>
+                
+              <div class="col-md-12 work">
+                <div class="  story">
+                  <p class="px-3 py-3">Task Manager Project was a team Project at Generation Australia Junior web development Program using bootstrap and Javascript.There was lot of Challenges in this project but we accomplished all rubric requirement as team.We work as a unit with clear communication .This was great team work experience for me and thoroughly enjoyed  team work.</p>
+                  <p class="h6 text-muted px-3 built">/* Build with*/ `${HTML-CSS}`</p>
+                  <p class="px-3 git"><a href="">Live Demo</a></p>
+                  <p class="px-3 git"><a href="">Github Repo</a></p>
+                </div>
+                <div class="card-position">
+                  <div class="card">
+                    <div class="card__content">
+                      <div class="card__front">
+                        <img src="./assets/pro1.png" alt="">
+                      </div> 
+                      
+                      <div class="card__back">
+                        <img src="./assets/Dom.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  
+                </div>
+                  
+                <div class="col-md-12 work">
+                  <div class="  story">
+                    <p class="px-3 py-3">Task Manager Project was a team Project at Generation Australia Junior web development Program using bootstrap and Javascript.There was lot of Challenges in this project but we accomplished all rubric requirement as team.We work as a unit with clear communication .This was great team work experience for me and thoroughly enjoyed  team work.</p>
+                    <p class="h6 text-muted px-3 built">/* Build with*/ `${HTML-CSS}`</p>
+                    <p class="px-3 git"><a href="">Live Demo</a></p>
+                    <p class="px-3 git"><a href="">Github Repo</a></p>
+                    
+                  </div>
+                  <div class="card-position">
+                    <div class="card">
+                      <div class="card__content">
+                        <div class="card__front">
+                          <img src="./assets/pro1.png" alt="">
+                        </div> 
+                        
+                        <div class="card__back">
+                          <img src="./assets/Dom.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                    
+                  </div>
+                    
+          </div>
+        </div>
+    
+    </div>
+  </section>
    </main>
   <footer class="page__footer">
     <p>&copy Project</p>

@@ -8,6 +8,9 @@
  *
  * JS Version: ES2015/ES6
  */
+
+ 
+
 /**
  * Define Global Variables
  *
@@ -31,7 +34,14 @@ const createNavMenu = () => {
   });
 };
 createNavMenu();
-
+const SkewedOne = document.querySelector('.SkewedOne')
+const SkewedTwo = document.querySelector('.SkewedTwo');
+window.addEventListener('scroll', ()=>{
+    const value1= -15+window.scrollY/45;
+    const value2= 15+window.scrollY/-45;
+    SkewedOne.style.transform="skewY("+ value1 + "deg)";
+    SkewedTwo.style.transform="skewY("+ value2 + "deg)"
+})
 // Adding class 'active' to section when near top of viewport//
 //Adding and removing active to section links and view port//
 const navBarLink = document.querySelectorAll(".navbar__menu a");
