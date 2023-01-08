@@ -1,0 +1,23 @@
+#TopPage {
+    background-color: #808080;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    position: fixed;
+    bottom: -15px;
+    right: -25px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 1s ease-in;
+    border-radius: 50%;
+  }
+  #TopPage i {
+    padding-top: 32px;
+    font-size: 2rem;
+  }
+  
+  #TopPage.active {
+    opacity: 1;
+  }
+
+ 

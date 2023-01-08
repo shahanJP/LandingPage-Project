@@ -1,0 +1,161 @@
+.card {
+    width: 400px;
+    height: 380px;
+    box-shadow: 10px 10px 41px 0px rgba(0,0,0,0.75);
+    background-color: rgb(219, 219, 219);
+  }
+  
+  
+  .card__content {
+    text-align: center;
+    position: relative;
+    padding: 5em 2em;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+  }
+  
+  .card:hover .card__content {
+    transform: rotateY(0.5turn);
+  }
+  
+  .card__front,
+  .card__back {
+    height: 380px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2em 1em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: grid;
+    align-content: center;
+  }
+  
+  .card__front {
+    background-color: #d8d8d8;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: rgb(142, 142, 142);
+  }
+  
+  .card__front::before {
+    content: "";
+    position: absolute;
+    --spacer: 1em;
+    top: var(--spacer);
+    bottom: var(--spacer);
+    left: var(--spacer);
+    right: var(--spacer);
+    border: 3px solid currentColor;
+    transform:translateZ(3rem);
+  }
+  
+  .card__title {
+    font-size: 3.5rem;
+    transform: translateZ(9rem);
+    order: 2;
+    text-transform: uppercase;
+  }
+  
+  .card__body {
+    transform: translateZ(6rem);
+  }
+  .card__back {
+    transform: rotateY(0.5turn);
+    background: rgb(219, 219, 219);
+  }
+  .card-position{
+    position: relative;
+    top: -20%;
+    left: 27%;
+  }
+    .work {
+     position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+    .story{
+     padding-left: 1rem;
+     padding-right: 1rem;
+      width: 80%;
+      height: 400px;
+      background: rgb(241, 241, 235);
+    }
+  
+    .built{
+      background-color: #d0d0d0;
+      width: 40%;
+      padding: 1rem;
+    }
+    .git{
+      width: 30%;
+      text-align: center;
+      padding: 6px 0 6px 0;
+      background-color: #bbbbbb;
+      opacity: 0.7;
+      box-shadow: 0 8px 12px 0 rgba(68, 68, 73, 0.8);
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      color: rgb(69, 69, 69);
+      transition:  1s;
+    }
+    .git a{
+      text-decoration: none;
+      color: rgb(45, 45, 45);
+     
+    }
+    .git:hover{
+      width: 40%;
+      letter-spacing: 3px;
+    }
+  @media only screen and (max-width: 52.5em) {
+    .navbar__menu #btn {
+      top: 100%;
+      font-size: 17px;
+      width: 7.5em;
+      height: 1.8em;
+    }
+    .card {
+      height: 280px;
+      width: 280px;
+    }
+    .card__front,
+    .card__back {
+      height: 280px;
+    }
+    .card-position {
+      position: relative;
+      top: -10%;
+      left: 0;
+      height: 300px;
+    }
+    .story {
+      height: 600px;
+      padding: 0.5rem;
+    }
+    .story p {
+      font-size: 0.8rem;
+    }
+    .work {
+      margin-top: 2rem;
+    }
+    .gitlink {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .built {
+      width: 80%;
+      margin: auto;
+      text-align: center;
+    }
+  }
+  
+  

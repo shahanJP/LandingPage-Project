@@ -1,0 +1,15 @@
+.image {
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    box-sizing: border-box;
+    width: clamp(300px, 3vh, 150px);
+    height: clamp(300px, 3vh, 150px);
+  }
+  .btn a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 1s;
+  }

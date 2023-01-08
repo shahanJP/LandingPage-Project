@@ -12,25 +12,30 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link href="css/styles.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="css/main.scss" rel="stylesheet">
 </head>
 <body>
-  <!-- HTML Follows BEM naming conventions 
-  IDs are only used for sections to connect menu achors to sections -->
  
-  <header class="page__header">
+ <header class="page__header">
     <nav class="navbar__menu">
       <!-- Navigation starts as empty UL that will be populated with JS -->
       <ul id="navbar__list"></ul>
     </nav>
   </header>
-
-    <div class="container-fluid h-75 ">
+  <div class="social-links">
+    <a href="https://github.com/shahanJP" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/shahan-a-2312a2206/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    <a href="mailto:shahan.ahmad@hotmail.com" class="mail">shahan.ahmad@hotmail.com</a>
+  </div>
+  <main>
+    <div class="container-fluid h-100 ">
       <div class="row ">
         <div class="col-md-12 left skew ">
           <h1>Shahan Ahmad</h1>
-          <h3>Junior Web Developer</h3>
-          <a href="#">shahan.ahmad@hotmail.com</a>
+          <div class="role"></div>
+          <h3>JUNIOR FRONT-END DEVELOPER</h3>
+          <a href="mailto:shahan.ahmad@hotmail.com">shahan.ahmad@hotmail.com</a>
           <h4>Melbourne</h4>
           <span class="SkewedOne"></span>
       <span class="SkewedTwo"></span>
@@ -38,18 +43,17 @@
       </div>
       
   </div>
-  <main>
    <!--About-->
-    <section id="section1" data-nav="Home" class="your-active-class h-50">
+    <section id="section1" data-nav="1, About" class="your-active-class h-50">
       <h2>1,</h2>
-      <div class="container py-2 h-auto ">
+      <div class="container  h-50 ">
       <div class="row">
-        <div class="col-md-6 xs-6  p-4">
-          <div class="image">
-            <img src="./assets/photo.jpg" alt="my pic">
+        <div class="col-md-6  ">
+          <div class="image" >
+            <img src="./assets/photo.jpg" alt="my pic" >
           </div>
         </div>
-        <div class="col-md-6 xs-6 d-flex flex-column justify-content-center">
+        <div class="col-md-6  d-flex flex-column justify-content-center" >
             <h1>About Me</h1>
             <p>I am enthusiastic and Growth mindset Graduate Front End Developer with strong work ethics, motivated to learn & grow. The main area of my expertise is front-end development, HTML, CSS, JS and React Framework building small and medium web apps, custom plugins, features, animations, and coding interactive layouts.</p>
             <button type="button" class="btn  btn-secondary  "><a href="./assets/resume.pdf" rel="noopener noreferrer" target="_blank" class="button">Resume</a></button>
@@ -59,14 +63,14 @@
     </section>
 
     <!--skills-->
-    <section id="section2" data-nav="About" >
+    <section id="section2" data-nav="2, Skills" >
       <h2>2,</h2>
-      <div class="container p-5 h-auto">
+      <div class="container-fluid p-5 h-auto">
         <div class="row">
-        <div class="col-md-5 xs-5 d-flex flex-column justify-content-center">
+        <div class="col-md-5 col-sm-12 d-flex flex-column justify-content-center">
           <div class="skill-text">
             <div class="my-text">
-              <h1><span>M</span>y <span>S</span>kills</h1>
+              <h1>M<span>y</span>S<span>kills</span></h1>
                 <p>
                 I learn the skills that are necessary to be a Junior Front End Developer from Univeristy,
                 Bootcamp and lots of online tuturiol and motivated to learn more, I thrive on my Behaviour skills
@@ -85,8 +89,8 @@
               </div>
           </div>
         </div>
-        <div class="col-md-7 xs-7 d-flex flex-column justify-content-center ">
-          <div class="book">
+        <div class="col-md-7 col-sm-12 ">
+          <div class="book w-100">
             <input type="checkbox" id="c1" />
             <input type="checkbox" id="c2" />
             <input type="checkbox" id="c3" />
@@ -307,30 +311,30 @@
    
     
     <!--study-->
-    <section id="section4" data-nav="Media">
+    <section id="section3" data-nav="3, Education">
       <h1> 4, Education</h1>
-      <div class="container h-auto education ">
+      <div class="container-fluid h-auto education ">
         <div class="row py-5 ">
           <div class="col-md-6  d-flex flex-column justify-content-center ">
             <div class="blob d-flex flex-column justify-content-center align-items-center">
-              <p class="h3 text-uppercase">Education</p>
+              <h5 class="text-uppercase">Education</h5>
               <article class="py-1">
                <p class="h6">Victoria University</p>
                <p>Graduate Diploma Business Computing</p>
               </article>
               <article class="py-1 ">
-               <p class="h6">RMIT</p>
+               <p class="h4">RMIT</p>
                <p>Front End Developer - 2022 </p>
               </article>
               <article class="py-1">
-               <p class="h6">Generation Australia</p>
-               <p>Front End Developer Program - 2022</p>
+               <p class="h4">Generation Australia</p>
+               <p  >Front End Developer Program - 2022</p>
               </article>
              </div> 
           </div>
           <div class="col-md-6 py-5   d-flex flex-column justify-content-center ">
             <div class="blob d-flex flex-column justify-content-center align-items-center">
-              <p class="h3 text-uppercase">Certificate</p>
+              <h5 class= "text-uppercase">Certificate</h5>
               <ul class="py-5 ">
                 <li>Certificate in Front-End Developer Udacity</li>
                 <li>HTML  Codecademy</li>
@@ -349,39 +353,42 @@
           <div class="col-md-12   d-flex flex-column justify-content-center ">
             <div class="blob exp d-flex flex-column justify-content-center ">
               <p class="h3 text-uppercase">experience</p>
-              <p class="h4">Generation Australia</p>
-            <p class="h5">Date:2022</p>
-            <p class="h6">Junior Web Developer Program</p>
-            <p class="fs-6">I was accepted into Generation Australia’s 16 week, Junior web development program Program.  I learn  web development technical skills along with growth mindset and persistence skills.Efficiently contributed to highly collaborative work environment, finding solutions with determination.Used various technologies, including JavaScript to determine coding requirements for project creation, including ecommerce capability and security and specialized scripts.</p>
+              <h5>Generation Australia</h5>
+            <h5>Date:2022</h6>
+            <h6>Junior Web Developer Program<h6>
+              <hr>
+            <p >I was accepted into Generation Australia’s 16 week, Junior web development program Program.  I learn  web development technical skills along with growth mindset and persistence skills.Efficiently contributed to highly collaborative work environment, finding solutions with determination.Used various technologies, including JavaScript to determine coding requirements for project creation, including ecommerce capability and security and specialized scripts.</p>
              </div> 
           </div>
          
         </div>
       </div>
     </section>
-
-    
        <!--project--> 
-       <section id="section3" data-nav="Contact" >
+       <section id="section4" data-nav="4, Project" >
         <h1>3,I Built Something....</h1>
         <div class="container-fluid h-auto">
           <div class="row  " >
            <div class="col-md-12 work">
             <div class="py-3 story">
-              <p class="px-3 py-3">Task Manager Project was a team Project at Generation Australia Junior web development Program using bootstrap and Javascript.There was lot of Challenges in this project but we accomplished all rubric requirement as team.We work as a unit with clear communication .This was great team work experience for me and thoroughly enjoyed  team work.</p>
-                    <p class="h6 text-muted px-3 built">/* Build with*/ `${HTML-CSS}`</p>
-                    <p class="px-3 git"><a href="">Live Demo</a></p>
-                    <p class="px-3 git"><a href="">Github Repo</a></p>
+              <p class="px-3 py-3">"React Portfolio". After Finishing Junior web developer Program At Generation Australia.I learned the fundamental of React and gain more confidence in Javascript, all I wanted to practice constructing React project.
+                building Portfolio I thought is best way to start.I learn how to create functional apps while working on this project.Furthermore, I learn the tools and React ecosystem to employ for this project.
+              </p>
+                    <p class="h6 text-muted px-3 built">/* Build with*/ `${React.js}`</p>
+                    <div class="gitlink">
+                      <p class="px-3 git"><a href="https://shahanjp.github.io/shahan-portfolio/" target="_blank">Live Demo</a></p>
+                      <p class="px-3 git"><a href="https://github.com/shahanJP/shahan-portfolio" target="_blank">Github Repo</a></p>
+                    </div>
             </div>
             <div class="card-position">
               <div class="card">
                 <div class="card__content">
                   <div class="card__front">
-                    <img src="./assets/pro1.png" alt="">
+                    <img src="./assets/pro4.png" alt="">
                   </div> 
                   
                   <div class="card__back">
-                    <img src="./assets/Dom.jpg" alt="">
+                    <img src="./assets/portfolio.jpg" alt="">
                   </div>
                 </div>
               </div>
@@ -391,20 +398,22 @@
               
             <div class="col-md-12 work">
               <div class="  story">
-                <p class="px-3 py-3">Task Manager Project was a team Project at Generation Australia Junior web development Program using bootstrap and Javascript.There was lot of Challenges in this project but we accomplished all rubric requirement as team.We work as a unit with clear communication .This was great team work experience for me and thoroughly enjoyed  team work.</p>
-                <p class="h6 text-muted px-3 built">/* Build with*/ `${HTML-CSS}`</p>
-                <p class="px-3 git"><a href="">Live Demo</a></p>
-                <p class="px-3 git"><a href="">Github Repo</a></p>
+                <p class="px-3 py-3">Shopping Cart was  Generation  Australia Junior web development Program final individual Project using React.js.In start I struggle with JSX and react core concept but thanks to react documentaion every time i stuck i turned back to documentation and get the fundamental concept of react clear and applied on this project .ReactJS is extremely intuitive to work with and provides interactivity to the layout of any UI.</p>
+                <p class="h6 text-muted px-3 built">/* Build with*/ `${Bootstrap-React.js}`</p>
+                <div class="gitlink">
+                  <p class="px-3 git"><a href="https://shahanjp.github.io/shahan-cart-app/#/" target="_blank">Live Demo</a></p>
+                  <p class="px-3 git"><a href="https://github.com/shahanJP/shahan-cart-app" target="_blank">Github Repo</a></p>
+                </div>
               </div>
               <div class="card-position">
                 <div class="card">
                   <div class="card__content">
                     <div class="card__front">
-                      <img src="./assets/pro1.png" alt="">
+                      <img src="./assets/pro2.png" alt="">
                     </div> 
                     
                     <div class="card__back">
-                      <img src="./assets/Dom.jpg" alt="">
+                      <img src="./assets/gene.png" alt="">
                     </div>
                   </div>
                 </div>
@@ -415,19 +424,21 @@
               <div class="col-md-12 work">
                 <div class="  story">
                   <p class="px-3 py-3">Task Manager Project was a team Project at Generation Australia Junior web development Program using bootstrap and Javascript.There was lot of Challenges in this project but we accomplished all rubric requirement as team.We work as a unit with clear communication .This was great team work experience for me and thoroughly enjoyed  team work.</p>
-                  <p class="h6 text-muted px-3 built">/* Build with*/ `${HTML-CSS}`</p>
-                  <p class="px-3 git"><a href="">Live Demo</a></p>
-                  <p class="px-3 git"><a href="">Github Repo</a></p>
+                  <p class="h6 text-muted px-3 built">/* Build with*/ `${HTML-CSS-Bootstrap-Javascript}`</p>
+                  <div class="gitlink">
+                  <p class="px-3 git"><a href="https://shahanjp.github.io/task-project/" target="_blank">Live Demo</a></p>
+                  <p class="px-3 git"><a href="https://github.com/shahanJP/task-project" target="_blank">Github Repo</a></p>
+                </div>
                 </div>
                 <div class="card-position">
                   <div class="card">
                     <div class="card__content">
                       <div class="card__front">
-                        <img src="./assets/pro1.png" alt="">
+                        <img src="./assets/pro3.png" alt="">
                       </div> 
                       
                       <div class="card__back">
-                        <img src="./assets/Dom.jpg" alt="">
+                        <img src="./assets/task.png" alt="">
                       </div>
                     </div>
                   </div>
@@ -437,10 +448,12 @@
                   
                 <div class="col-md-12 work">
                   <div class="  story">
-                    <p class="px-3 py-3">Task Manager Project was a team Project at Generation Australia Junior web development Program using bootstrap and Javascript.There was lot of Challenges in this project but we accomplished all rubric requirement as team.We work as a unit with clear communication .This was great team work experience for me and thoroughly enjoyed  team work.</p>
+                    <p class="px-3 py-3">In Jairajpuri Blog  I learn how to make a webpage with marked up text and images.Learn how to use other editors to develop  web pages and how to use the browser developer tools to debug  webpages.</p>
                     <p class="h6 text-muted px-3 built">/* Build with*/ `${HTML-CSS}`</p>
-                    <p class="px-3 git"><a href="">Live Demo</a></p>
-                    <p class="px-3 git"><a href="">Github Repo</a></p>
+                    <div class="gitlink">
+                      <p class="px-3 git"><a href="https://shahanjp.github.io/shahanblog.github.io/" target="_blank">Live Demo</a></p>
+                      <p class="px-3 git"><a href="https://github.com/shahanJP/shahanblog.github.io" target="_blank">Github Repo</a></p>
+                    </div>
                     
                   </div>
                   <div class="card-position">
@@ -451,7 +464,7 @@
                         </div> 
                         
                         <div class="card__back">
-                          <img src="./assets/Dom.jpg" alt="">
+                          <img src="./assets/blog.png" alt="">
                         </div>
                       </div>
                     </div>
@@ -466,14 +479,12 @@
   </section>
    </main>
   <footer class="page__footer">
-    <p>&copy Project</p>
+    <p>&copy Shahan Portfolio</p>
     <div id="TopPage"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
   </footer>
 </div>
   <script src="./js/app.js" type="module" ></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-
-
 </body>
 </html>
