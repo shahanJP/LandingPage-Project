@@ -8,8 +8,19 @@
     width: clamp(300px, 3vh, 150px);
     height: clamp(300px, 3vh, 150px);
   }
-  .btn a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+  .btn{
+    background-color: #adadad;
+    width: 50%;
     transition: 1s;
+  }
+  .btn:hover{
+    background: rgb(194, 194, 194);
+    
+  }
+  .btn a{
+    color: rgb(11, 0, 0);
+    text-decoration: none;
+    letter-spacing: 1.5;
+    transition: 1s;
+    font-weight: 800;
   }
